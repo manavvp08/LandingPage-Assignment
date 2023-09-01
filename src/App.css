@@ -13,6 +13,15 @@
   }
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,11 +37,263 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* App.css */
+
+.Container {
+  display: inline-block;
+  flex-direction: column;
+  margin-top: 120px;
+  margin-left: 80px;
+  align-items: flex-start; 
 }
+
+
+.gradient-text {
+  background: linear-gradient(180deg, #618ed7 100%, #045ceb 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 54px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.blue-underline {
+  color: black;
+  position: relative;
+  padding-bottom: 15px; /* Adjust the padding as needed */
+  
+}
+
+.blue-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px; /* Adjust the thickness of the underline */
+  background-color: blue;
+  border-radius: 2px; /* Adjust for a rounded underline if desired */
+}
+
+.random-text {
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: 30px;
+  display: flex;
+  max-width: 50%; /* Limit the maximum width to 50% of the container */
+  left: 1px; /* Push the text to the right */
+  padding: 20px; /* Add padding for spacing */
+  font-size: 16px; /* Adjust the font size as needed */
+  margin-left: 0%;
+}
+
+
+
+
+
+
+.client-projects-info img {
+  width: 45px;
+  margin-bottom: 5px;
+}
+
+.big-blue-text {
+  font-size: 46px;
+  color: #0039e5;
+  font-weight: bold;
+  margin: 0;
+}
+
+.normal-text {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #000;
+  margin: 0;
+}
+
+
+/* Your existing CSS styles */
+
+.star1 {
+  width: 110px !important; /* Adjust the width as needed */
+  height: 40px !important; /* Adjust the height as needed */
+}
+
+/* Your existing styles... */
+
+/* Main Container */
+.main-container {
+  min-height: 90vh;
+  width: 100vw;
+  overflow-x: hidden;
+
+  margin-left:60px;
+  margin-top: 120px;;
+  
+  display: flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+
+/* TestimonialBox */
+.testimonial-box {
+  background-color: #dbeafe;
+  color: #4883e3;
+  padding: 6px 13px;
+  display: flex;
+  border-radius: 2px;
+  font-size: 20px;
+  top: 100px;
+  left: 40px;
+  
+}
+
+/* Divider */
+.divider {
+  width: 80px;
+  height: 100%;
+  background-color: transparent;
+}
+
+/* ClientProjectsInfo Container */
+.client-projects-info {
+  display: flex;
+  justify-content: space-between; /* Space columns evenly */
+  align-items: center;
+  margin-top: 1px;
+  margin-left: 15px;
+}
+
+/* Individual Columns */
+.column {
+  display: flexbox;
+  flex-direction:column;
+  align-items:flex-start;
+  padding: 10px;
+}
+
+/* Divider Between Columns */
+.column-divider {
+  width: 80px; /* Adjust space between columns */
+}
+
+.btn-primary {
+  background-color: #0039e5; /* Darker blue background color */
+  color: white; /* Text color */
+  font-weight: bold;
+  padding: 10px 25px;
+  margin-right: 20px; /* Adjust the margin to your desired spacing */
+  white-space: pre-line; /* Allow wrapping of text with preserved line breaks */
+}
+
+/* Style the secondary button */
+.btn-outline-primary {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  white-space: normal;
+  word-wrap: break-word;
+  padding: 12px 20px;
+  margin-right: 20px; /* Adjust the margin to your desired spacing */
+}
+
+/* Add margin to create space between buttons */
+.btn-primary,
+.btn-outline-primary {
+  margin-top: 30px;
+  margin-left: 20px;
+  border-radius: 20px;
+}
+/* button.css */
+.playbtn {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+}
+
+
+/* You can add more styles as needed */
+/* Style the container */
+/* Style the container */
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+  width: 580px;
+  position: absolute;
+  top: 100px;
+  right: 150px;
+}
+
+.container2 {
+  background-color: white;
+  display: flex;
+  flex-direction: row; /* Change flex-direction to column */
+  align-items:flex-start;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+  height: 280px;
+  width: 580px;
+  position: absolute;
+  top: 380px;
+  right: 100px;
+}
+
+.biohazard {
+  padding: 0px;
+ 
+  padding-right: 20px; /* Add some space to the right of the image */
+  width: 80px;
+  height: auto; /* Adjust the height as needed */
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.wifi {
+  padding: 0px;
+ margin-top: 100px;
+ margin-left: 0px;
+  padding-right: 20px; /* Add some space to the right of the image */
+  width: 90px;
+  height: 130px; /* Adjust the height as needed */
+}
+
+.stars {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row; /* Align stars vertically */
+  align-items: center; /* Horizontally center stars */
+  margin-right: 50px; /* Adjust spacing between stars and text */
+}
+
+
+
+.star.orange {
+  color: orange; /* Orange star color */
+}
+.content {
+  display: flex;
+  /* flex-direction: column; */
+}
+.left-content {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: flex-start; /* Align items to the left */
+  margin-right: 20px; /* Adjust spacing between left and right content */
+}
+.right-content {
+  display: flex;
+  flex-direction: column;
+}
+
